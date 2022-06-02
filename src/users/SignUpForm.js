@@ -15,7 +15,7 @@ function SignUpForm() {
 	async function handleSubmit(e) {
 		e.preventDefault()
 
-		await fetch(`http://localhost:5000/users/`, {
+		await fetch(`https://rest-rant-api.herokuapp.com/users`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

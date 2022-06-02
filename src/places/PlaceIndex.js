@@ -9,7 +9,7 @@ function PlaceIndex(data) {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch(`http://localhost:5000/places`)
+			const response = await fetch(`https://rest-rant-api.herokuapp.com/places`)
 			const resData = await response.json()
 			setPlaces(resData)
 		}
